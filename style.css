@@ -16,10 +16,31 @@ body {
     height: 100px;
     padding: 10px 100px;
     box-sizing: border-box;
-
-
 }
-
+#menu-icon {
+	width: 30px;
+	height: 26px;
+	background: url(img/nav-icon.png) center; /* not displayed atm */
+	margin: 50px 0 0 50px;
+}
+nav ul, nav:active ul{
+	display:none;
+	padding: 8px 0;
+	left: 45px;
+	top: 60px;
+	width: 20%;
+	z-index: 1000;
+}
+nav:hover ul{
+	display: block;
+	position: absolute;
+}
+#menu-icon {
+	width: 30px;
+	height:26px;
+	background: url(img/nav-icon.png) center;
+	display:inline-block;
+}
 .nav * {
     box-sizing: border-box;
     transition: all 0.35s ease;
