@@ -4,8 +4,8 @@ body {
 
 }
 
-.nav {
-    font-family: Prime;
+nav {
+
     text-transform: uppercase;
     font-weight: 500;
     letter-spacing: 1px;
@@ -17,12 +17,7 @@ body {
     padding: 10px 100px;
     box-sizing: border-box;
 }
-#menu-icon {
-	width: 30px;
-	height: 26px;
-	background: url(img/nav-icon.png) center; /* not displayed atm */
-	margin: 50px 0 0 50px;
-}
+
 nav ul, nav:active ul{
 	display:none;
 	padding: 8px 0;
@@ -36,24 +31,27 @@ nav:hover ul{
 	position: absolute;
 }
 #menu-icon {
+  top: 0;
+  left: 0;
 	width: 30px;
 	height:26px;
 	background: url(img/nav-icon.png) center;
 	display:inline-block;
+
 }
-.nav * {
+nav * {
     box-sizing: border-box;
     transition: all 0.35s ease;
 }
 
-.nav li {
+nav li {
     display: inline-block;
     list-style: outside none none;
     margin: .5em 1em;
     padding: 0;
 }
 
-.nav a {
+nav a {
   padding: .5em 0.8em;
   color: rgba(255,255,255,0.5);
   position: relative;
@@ -61,8 +59,8 @@ nav:hover ul{
   font-size: 20px;
 }
 
-.nav a:before,
-.nav a:after {
+.navSight a:before,
+.navSight a:after {
     height: 14px;
     width: 14px;
     position: absolute;
@@ -71,7 +69,7 @@ nav:hover ul{
     opacity: 0;
 }
 
-.nav a:before {
+.navSight a:before {
     right: 0;
     top: 0;
     border-right: 3px solid red;
@@ -80,7 +78,7 @@ nav:hover ul{
 }
 
 
-.nav a:after {
+.navSight a:after {
     left: 0;
     bottom: 0;
     border-left: 3px solid red;
