@@ -168,3 +168,9 @@ a:hover:after {
     opacity: 1;
 
 }
+
+.languages li {
+  list-style: none;
+  display: inline-block;
+  margin: auto;
+}
