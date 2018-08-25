@@ -1,5 +1,5 @@
 html, body {
-    background: #212121;
+    background: #fff;
     padding: 0;
     margin: 0;
     height: 100%;
@@ -7,12 +7,11 @@ html, body {
 }
 
 .intro{
-	height: 100vh;
+	height: 100%;
 	width: 100%;
-	margin:auto;
+	margin: auto;
 	background: url(img/paint.jpg) no-repeat 50% 50%;
 	background-size: cover;
-	display: table;
 	top: 0;
 }
 
@@ -25,15 +24,21 @@ nav {
     position: fixed;
     height: 100px;
     width: 100%;
-    margin-left: 25%;
     box-sizing: border-box;
+    background-color:rgba(235, 0, 0, 0.4);
+    border-bottom: 2px solid black;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
 }
 
 nav *  {
     box-sizing: border-box;
     transition: all 0.35s ease;
 }
-
+nav ul {
+  padding-left: 35%;
+}
 nav li {
     display: inline-block;
     list-style: outside none none;
@@ -105,12 +110,7 @@ a:hover:after {
 
 /* End Navigation */
 
-/* .inner {
-	display: table-cell;
-	vertical-align: middle;
-	width: 100%;
-	max-width: none;
-} */
+
 h1.mainName {
   width: 50%;
 	font-family: 'Playfair Display', serif;
@@ -119,7 +119,6 @@ h1.mainName {
 	color: #FFF;
   text-align: right;
 	text-shadow: 2px 2px 45px #000000;
-  vertical-align: middle;
   float: left;
   margin: 0 auto;
 }
@@ -138,19 +137,70 @@ h2.mainTitle {
 .content {
 	font-family: 'Playfair Display', serif;
   max-width: 100%;
+  height: 100%;
+  position: static;
   margin: 0 auto;
   font-size: 170%;
-  padding-top: 250px;
+  padding-top: 270px;
+  border: 1px solid #000000;
 }
+.gitLink{
+  display: inline-block;
+  list-style: none;
+}
+.gitLink ul li {
+  display: inline-block;
+  color: #000000;
+  margin: auto;
 
+}
 .about{
   text-align: center;
   margin: 5% 25%;
 }
 
+#hello {
+  text-align: center;
+  font-weight: 200;
+  font-size: 200%;
+  text-decoration: underline;
+}
+.codes {
+  background-color: rgba(235, 0, 0, 0.7);
+  border-radius: 15px;
+}
 .languages li {
   list-style: none;
   display: inline-block;
   margin: auto;
   font-size: 300%;
+}
+
+.projects{
+
+}
+.connect {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border: 1px solid black;
+  position: relative;
+}
+.connect ul{
+  padding-right: 2rem;
+}
+.connect ul li{
+  width: auto;
+  list-style: none;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin: 0 auto;
+  font-size: 300%;
+  padding: 5%;
+}
+.contact{
+  position: relative;
+  display: block;
+  width: 49%;
 }
