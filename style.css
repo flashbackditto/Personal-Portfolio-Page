@@ -147,11 +147,13 @@ h2.mainTitle {
 .gitLink{
   display: inline-block;
   list-style: none;
-}
-.gitLink ul li {
-  display: inline-block;
-  color: #000000;
   margin: auto;
+  position: relative;
+  right: 1rem;
+  top: 1rem;
+  font-size: 200%;
+}
+
 
 }
 .about{
