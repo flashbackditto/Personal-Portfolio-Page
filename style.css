@@ -87,7 +87,7 @@ a:hover:after {
     transform: translate(8%, 0%);
     opacity: 1;
 }
-/* for mobile media query */
+/* nav for mobile media query */
 /* nav ul, nav:active ul{
 	display:none;
 	padding: 8px 0;
