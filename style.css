@@ -179,6 +179,7 @@ h2.mainTitle {
 .codes {
   background-color: rgba(235, 0, 0, 0.7);
   border-radius: 15px;
+  border: 2px solid black;
   float: left;
   margin-right: 10px;
   margin-left: 20px;
@@ -189,14 +190,19 @@ h2.mainTitle {
 }
 .languages li {
   list-style: none;
-
   margin: auto;
   font-size: 300%;
+}
+.languages li i {
+  padding: 5px;
 }
 
 .projects{
 position: static;
 clear: left;
+margin: auto;
+width: 50%;
+text-align: center;
 }
 
 .connect {
@@ -216,7 +222,7 @@ clear: left;
   position: relative;
   text-align: center;
   margin: 0 auto;
-  font-size: 300%;
+  font-size: 600%;
   padding: 5%;
 }
 .contact{
