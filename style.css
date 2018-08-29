@@ -169,9 +169,15 @@ h2.mainTitle {
   text-align: center;
   margin: 5% 20%;
 }
+.describe{
+  float: left;
 
+}
 .profilePic {
   margin: 10px;
+  float: right;
+  position: relative;
+  bottom: 30px;
 }
 
 #hello {
