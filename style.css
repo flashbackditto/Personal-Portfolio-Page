@@ -167,7 +167,7 @@ h2.mainTitle {
 
 .about{
   text-align: center;
-  margin: 5% 25%;
+  margin: 5% 20%;
 }
 
 #hello {
@@ -179,16 +179,24 @@ h2.mainTitle {
 .codes {
   background-color: rgba(235, 0, 0, 0.7);
   border-radius: 15px;
+  float: left;
+  margin-right: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  width: 350px;
+  padding: 10px;
+
 }
 .languages li {
   list-style: none;
-  display: inline-block;
+
   margin: auto;
   font-size: 300%;
 }
 
 .projects{
-
+position: static;
+clear: left;
 }
 
 .connect {
