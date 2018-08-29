@@ -170,6 +170,10 @@ h2.mainTitle {
   margin: 5% 20%;
 }
 
+.profilePic {
+  margin: 10px;
+}
+
 #hello {
   text-align: center;
   font-weight: 200;
@@ -196,12 +200,14 @@ h2.mainTitle {
 .languages li i {
   padding: 5px;
 }
-
+.projects hr {
+  width: 50%;
+}
 .projects{
 position: static;
 clear: left;
 margin: auto;
-width: 50%;
+width: 100%;
 text-align: center;
 }
 
