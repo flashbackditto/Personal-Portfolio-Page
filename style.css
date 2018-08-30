@@ -128,7 +128,8 @@ h1.mainName {
 h2.mainTitle {
   text-shadow: 2px 2px 7px #fff;
   color: #000000;
-  font-size: 170%;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 165%;
   width: 48%;
   padding-top: 72px;
   float: right;
@@ -165,6 +166,10 @@ h2.mainTitle {
   margin: 0 auto;
 }
 
+.gitLink li :hover {
+  font-weight: bold;
+}
+
 .about{
   text-align: center;
   margin: 5% 20%;
@@ -196,15 +201,23 @@ h2.mainTitle {
   margin-bottom: 20px;
   width: 350px;
   padding: 10px;
-
 }
+.codes h2{
+  font-family: monospace;
+  font-size: 200%;
+}
+
 .languages li {
   list-style: none;
   margin: auto;
-  font-size: 300%;
+  font-size: 200%;
+  text-align: right;
+  padding-right: 100px;
+
 }
-.languages li i {
+.languages i {
   padding: 5px;
+
 }
 .projects hr {
   width: 50%;
@@ -217,26 +230,11 @@ width: 100%;
 text-align: center;
 }
 
-.connect {
-  width: 50%;
-  margin: 0 auto;
-  text-align: center;
-  border: 1px solid black;
-  position: relative;
-}
-.connect ul{
-  padding-right: 2rem;
-}
-.connect ul li{
-  width: auto;
-  list-style: none;
-  display: inline-block;
-  position: relative;
-  text-align: center;
-  margin: 0 auto;
-  font-size: 600%;
-  padding: 5%;
-}
+.one-third-port{
+  	width: 29.33333%;
+  	padding:2%;
+  	float:left;
+  }
 .contact{
   position: relative;
   display: block;
