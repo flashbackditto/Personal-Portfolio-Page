@@ -5,6 +5,7 @@ html, body {
     height: 100%;
     width: 100%;
     background-color: rgba(37, 37, 34, 1);
+    color: rgba(255,255,255, 0.9)
 }
 
 .intro{
@@ -184,6 +185,7 @@ h2.mainTitle {
   float: right;
   position: relative;
   bottom: 30px;
+  border: 1px solid white;
 }
 
 #hello {
@@ -194,6 +196,7 @@ h2.mainTitle {
 }
 .codes {
   background-color: rgba(255, 255, 0, 1);
+  color: rgba(0, 0, 0, 1);
   border-radius: 15px;
   border: 2px solid black;
   float: left;
@@ -236,6 +239,9 @@ text-align: center;
   	padding:2%;
   	float:left;
   }
+.one-third-port img {
+  border: 2px solid black;
+}
 .contact{
   position: relative;
   display: block;
