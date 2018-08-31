@@ -4,6 +4,7 @@ html, body {
     margin: 0;
     height: 100%;
     width: 100%;
+    background-color: rgba(37, 37, 34, 1);
 }
 
 .intro{
@@ -192,7 +193,7 @@ h2.mainTitle {
   text-decoration: underline;
 }
 .codes {
-  background-color: rgba(235, 0, 0, 0.7);
+  background-color: rgba(255, 255, 0, 1);
   border-radius: 15px;
   border: 2px solid black;
   float: left;
