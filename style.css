@@ -227,17 +227,17 @@ h2.mainTitle {
   width: 50%;
 }
 .projects{
-position: static;
-clear: left;
-margin: auto;
-width: 100%;
-text-align: center;
+  position: static;
+  clear: left;
+  margin: auto;
+  width: 100%;
+  text-align: center;
 }
 
 .one-third-port{
-  	width: 29.33333%;
-  	padding:2%;
-  	float:left;
+  width: 29.33333%;
+  padding:2%;
+  float:left;
   }
 .one-third-port img {
   border: 2px solid black;
@@ -246,4 +246,11 @@ text-align: center;
   position: relative;
   display: block;
   width: 49%;
+  text-align: center;
+  margin: auto;
+}
+footer{
+  margin: auto;
+  text-align: center;
+  background-color: rgba(0,0,0, 0.7)
 }
