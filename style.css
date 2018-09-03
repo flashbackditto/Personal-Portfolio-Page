@@ -200,11 +200,12 @@ h2.mainTitle {
   margin-left: 20px;
   margin-bottom: 20px;
   width: 350px;
-  padding: 10px;
+  padding: 0 10px;
 }
 .skills i {
   font-size: 300%;
 }
+
 .codes {
   background-color: rgba(255, 255, 0, 0.9);
   color: rgba(0, 0, 0, 1);
@@ -259,12 +260,26 @@ h2.mainTitle {
 }
 .contact{
   position: static;
-  width: 49%;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
 }
+input, textarea {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  padding: 1rem;
+  border-radius: 5px;
+}
+  textarea {
+    height: 120px;
+  }
+
 footer{
+  width: 100%;
+  height: 30px;
   margin: auto;
+  padding-top: 10px;
   text-align: center;
   background-color: rgba(0,0,0, 0.7)
 }
