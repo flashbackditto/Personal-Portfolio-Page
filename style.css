@@ -138,7 +138,6 @@ h2.mainTitle {
   position: relative;
 }
 
-
 .content {
 	font-family: 'Playfair Display', serif;
   width: 100%;
@@ -148,8 +147,8 @@ h2.mainTitle {
   margin: 0 auto;
   font-size: 170%;
   padding-top: 270px;
-
 }
+
 .gitLink{
   display: inline-flex;
   list-style: none;
@@ -160,6 +159,7 @@ h2.mainTitle {
   font-size: 200%;
   padding: 0 1rem;
 }
+
 .gitLink li {
   position: relative;
   right: 100px;
@@ -175,10 +175,14 @@ h2.mainTitle {
   text-align: center;
   margin: 5% 15%;
 }
+
 .describe{
   float: left;
-
+  border: 1px solid black;
+  padding: 0;
+  margin-bottom: 30px;
 }
+
 .profilePic {
   margin: 10px;
   float: right;
@@ -193,31 +197,36 @@ h2.mainTitle {
   font-size: 200%;
   text-decoration: underline;
 }
-.skills{
-  border-radius: 10px;
+.atribute {
+  margin: auto;
+  width: 29%;
+  padding: 2%;
   float: left;
-  margin-right: 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-  width: 350px;
-  padding: 0 10px;
+  clear: right;
 }
-.skills i {
+.atributes i {
   font-size: 300%;
 }
+
+
+#skillsTitle {
+  font-size: 200%;
+  font-family: sans-serif;
+  text-decoration: underline;
+}
+
 
 .codes {
   background-color: rgba(255, 255, 0, 0.9);
   color: rgba(0, 0, 0, 1);
   border-radius: 10px;
   border: 2px solid black;
-  float: left;
-  margin-right: 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
+  margin: 345px auto 0 auto;
+  text-align: center;
   width: 50%;
   padding: 5px;
 }
+
 .codes h2{
   font-family: monospace;
   font-size: 200%;
@@ -229,15 +238,16 @@ h2.mainTitle {
   font-size: 200%;
   text-align: right;
   padding-right: 100px;
-
 }
+
 .languages i {
   padding: 5px;
-
 }
+
 .projects hr {
   width: 50%;
 }
+
 .projects{
   position: static;
   clear: left;
@@ -251,19 +261,23 @@ h2.mainTitle {
   width: 29.33333%;
   padding:2%;
   float:left;
-  }
+}
+
 .one-third-port img {
   border: 2px solid black;
 }
+
 .one-third-port img:hover {
   opacity: 0.5;
 }
+
 .contact{
   position: static;
   width: 100%;
   text-align: center;
   margin: 0 auto;
 }
+
 input, textarea {
   display: block;
   width: 50%;
@@ -271,9 +285,10 @@ input, textarea {
   padding: 1rem;
   border-radius: 5px;
 }
+
   textarea {
     height: 120px;
-  }
+}
 
 footer{
   width: 100%;
