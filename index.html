@@ -17,10 +17,10 @@
   <a href="#" id="menu-icon"></a>
   <ul class="navSight">
     <li><a href="#">Home</a></li>
-    <li><a href="#">About Me</a></li>
-    <li><a href="#">Projects</a></li>
-    <li><a href="#">Connect</a></li>
-    <li><a href="#">Contact</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#proj">Projects</a></li>
+    <li><a href="#cont">Contact</a></li>
   </ul>
 </nav>
 </header>
@@ -38,6 +38,9 @@
 </div>
 </section>
 
+<a id="about"></a>
+<div class="clearFixPadding"></div>
+
 <section class="about">
   <div class="describe">
     <p id="hello"> Hello World.</p> <img src="img/profilePic.jpg" class="profilePic">  <p> I first got interested in programming in 2015 when my roomate introduced me to Freecodecamp.
@@ -51,8 +54,13 @@
         like to hire me full time. If you are interested in hiring me either for freelance work or inquiring about hiring me full time, don't hesistate
         to contact me below.</p>
   </div>
+
+  <a id="skills"></a>
+  <div class="clearFixPadding"></div>
+<hr />
   <h2 id="skillsTitle">Skills</h2>
   <div class="atributes">
+    <div class="anim">
     <div class="atribute">
       <p><i class="fas fa-brain"></i></p>
         <h3>Motivated learner</h3>
@@ -60,6 +68,8 @@
           I'm well aware of the blazing fast changes to industry standard technolgy stacks
           and am more than excited to learn new frameworks.</p>
     </div>
+  </div>
+    <div class="anim">
     <div class="atribute">
       <p><i class="fas fa-mobile-alt"></i></p>
         <h3>Responsive Designer</h3>
@@ -67,6 +77,8 @@
           paired with media queries. However, I have many hours of experience with classic grid
           and I use frameworks like Bootstrap and Materialize when prototyping.</p>
     </div>
+  </div>
+  <div class="anim">
     <div class="atribute">
       <p><i class="far fa-eye"></i></p>
         <h3>Eye for Detail</h3>
@@ -76,6 +88,7 @@
         I have a foresic eye for detail down to the pixel.  </p>
     </div>
   </div>
+  </div>
 <div class="anim">
 <div class="codes">
   <h2>Languages & Frameworks</h2>
@@ -83,7 +96,7 @@
     <ul class="languages">
       <li>HTML<i class="fab fa-html5"></i></li>
       <li>CSS<i class="fab fa-css3"></i><i class="fab fa-sass"></i><i class="fab fa-less"></i></li>
-      <li>Javascript<i class="fab fa-js"></i>&<i class="fab fa-node"></i></li>
+      <li>Javascript<i class="fab fa-js"></i><i class="fab fa-node"></i></li>
     </ul>
   </div>
 </div>
@@ -92,6 +105,8 @@
 <div class="projects">
 <hr />
 <div class="clearFixPadding"></div>
+
+<a id="proj"></a>
   <h2>Project Portfolio</h2>
     <p>Below are some websites I've been hired to design and create, as well as projects I've made for my own skill developement</p>
   <section class="one-third-port">
@@ -131,9 +146,10 @@
     </section>
 </div>
 <div>
+
   <section class="contact">
     <hr />
-    <h2>Contact</h2>
+    <h2>Contact</h2><a id="cont"></a>
       <p>For inquires regarding freelance work, web design, collaboration, or consultation email me at </p>
       <div class="inputsLeft">
       <form>
@@ -147,9 +163,9 @@
       <form action="">
         <textarea placeholder="Comments & Inquires" name="comments"></textarea>
       </form>
-      <fieldset>
+      <form>
      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-   </fieldset>
+   </form>
     </section>
 
 </div>
