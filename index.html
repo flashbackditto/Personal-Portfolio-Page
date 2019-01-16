@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
   <script src="https://unpkg.com/scrollreveal@3.4.0/dist/scrollreveal.min.js"></script> <!--reference desktop/websites under construction/personal portfolio for example of this magic -->
    <script scr="script.js"></script> <!-- used for js testing remove when deployed -->
+
 </head>
 
 <body>
@@ -42,8 +43,10 @@
 <div class="clearFixPadding"></div>
 
 <section class="about">
+  <p id="hello"> Hello World.</p>
   <div class="describe">
-    <p id="hello"> Hello World.</p> <img src="img/profilePic.jpg" class="profilePic">  <p> I first got interested in programming in 2015 when my roomate introduced me to Freecodecamp.
+  <div id="bio">
+    <p> I first got interested in programming in 2015 when my roomate introduced me to Freecodecamp.
       After playing around with Freecodecamps tutorials on HTML, CSS, & Javascript I began taking programming classes at my
       local community college. Since then, I've spent the majority of my free time having fun
       sharpening my web developement skills focusing on javascript, its many frameworks and it's interesting quirks. I love
@@ -53,6 +56,10 @@
         working as a freelance web developer and currently I'm beginning to look for a company with the right fit and culture that would
         like to hire me full time. If you are interested in hiring me either for freelance work or inquiring about hiring me full time, don't hesistate
         to contact me below.</p>
+        </div>
+
+        <img src="img/profilePic.jpg" id="profilePic">
+
   </div>
 
   <a id="skills"></a>
@@ -90,7 +97,8 @@
   </div>
   </div>
 <div class="anim">
-<div class="codes">
+  <div class="languages">
+<div class="card">
   <h2>Languages & Frameworks</h2>
   <p>I consider myself well praticed in the following:</p>
     <ul class="languages">
@@ -99,6 +107,16 @@
       <li>Javascript<i class="fab fa-js"></i><i class="fab fa-node"></i></li>
     </ul>
   </div>
+<!--
+  <div class = "titles">
+     <h2> BLah blah blah blah blah </h2>
+     <h2> BLah blah blah blah blah </h2>
+     <h2> BLah blah blah blah blah </h2>
+     <h2> BLah blah blah blah blah </h2>
+    </div>
+    -->
+
+</div>
 </div>
 </section>
 
@@ -108,43 +126,48 @@
 
 <a id="proj"></a>
   <h2>Project Portfolio</h2>
-    <p>Below are some websites I've been hired to design and create, as well as projects I've made for my own skill developement</p>
+    <p>Below are some websites I've been hired to design and create, as well as
+      projects I've made for my own skill developement</p>
+
+<div class="flexProj">
   <section class="one-third-port">
     <a href="#" target="_blank">
-    <img class="anim" src="img/port.jpg"></a>
+    <img  src="img/port.jpg"></a>
     <p>Photography website</p>
     </section>
 
     <section class="one-third-port">
       <a href="#" target="_blank">
-    <img class="anim" src="img/port.jpg"></a>
+    <img src="img/port.jpg"></a>
     <p>Web app created with React </p>
     </section>
 
     <section class="one-third-port">
     <a href="#" target="_blank">
-      <img class="anim" src="img/port.jpg"></a>
+      <img src="img/port.jpg"></a>
       <p> Html email example </p>
     </section>
 
     <section class="one-third-port">
       <a href="#" target="_blank">
-  <img class="anim" src="img/port.jpg"></a>
+  <img src="img/port.jpg"></a>
   <p> Folk band website </p>
       </section>
 
     <section class="one-third-port">
       <a href="#" target="_blank">
-  <img class="anim" src="img/port.jpg"></a>
+  <img src="img/port.jpg"></a>
   <p> Project Badass </p>
       </section>
 
     <section class="one-third-port">
   <a href="img/port.jpg" target="_blank">
-  <img class="anim" src="img/port.jpg"></a>
+  <img src="img/port.jpg"></a>
   <p>Realtor Website</p>
     </section>
+  </div>
 </div>
+
 <div>
 
   <section class="contact">

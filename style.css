@@ -180,17 +180,23 @@ h2.mainTitle {
 }
 
 .describe{
-  float: left;
+  display: flex;
+  flex-direction: row;
   padding: 0;
   margin-bottom: 30px;
 }
 
-.profilePic {
+
+#profilePic {
   margin: 10px;
-  float: right;
   position: relative;
   bottom: 30px;
   border: 1px solid white;
+  justify-content: flex-end;
+}
+
+#bio {
+  justify-content: flex-start;
 }
 
 #hello {
@@ -199,21 +205,20 @@ h2.mainTitle {
   font-size: 200%;
   text-decoration: underline;
 }
+
 .atribute {
   margin: auto;
-  width: 29%;
-  padding: 2%;
-  float: left;
-  clear: right;
+  padding: 2rem;
 }
 .atributes{
   font-weight: bolder;
   font-family: monospace;
+  display: flex;
+  justify-content: space-evenly;
 }
 .atributes i {
   font-size: 300%;
 }
-
 
 #skillsTitle {
   font-size: 200%;
@@ -222,20 +227,23 @@ h2.mainTitle {
 }
 
 
-.codes {
-  background-color: rgba(255, 255, 0, 0.9);
+.card {
+  background-color: rgba(255, 255, 255, 0.9);
   color: rgba(0, 0, 0, 1);
   border-radius: 10px;
   border: 2px solid black;
-  margin: 345px auto 0 auto;
+  margin: 45px auto 0 auto;
   text-align: center;
   width: 50%;
   padding: 5px;
 }
 
-.codes h2{
+.card h2{
+  background-color: rgba(255, 255, 0, 0.9);
   font-family: monospace;
   font-size: 200%;
+  margin-top: 0;
+  padding: 1rem;
 }
 
 .languages li {
@@ -250,23 +258,33 @@ h2.mainTitle {
   padding: 5px;
 }
 
+
+
 .projects hr {
   width: 50%;
 }
 
 .projects{
-  position: static;
-  clear: left;
   margin: auto;
   width: 100%;
-  height: 9rem;
   text-align: center;
 }
 
+
+.flexProj {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
 .one-third-port{
-  width: 29.33333%;
-  padding:2%;
-  float:left;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ flex-wrap: wrap;
+ padding:1rem;
+ width: 29.33333%;
 }
 
 .one-third-port img {
