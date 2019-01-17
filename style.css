@@ -273,22 +273,55 @@ h2.mainTitle {
 
 .flexProj {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
 }
 
 .one-third-port{
  display: flex;
- flex-direction: column;
+ flex-direction: row;
  justify-content: center;
  flex-wrap: wrap;
  padding:1rem;
- width: 29.33333%;
+ align-items: flex-start;
+}
+
+.projCard {
+  background-color: rgba(255, 255, 255, 0.9);
+  color: rgba(0, 0, 0, 1);
+  border-radius: 10px;
+  border: 2px solid black;
+  margin: 2rem;
+  padding: 1rem;
+  height: 215px;
+  box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.5);
+}
+
+.projCard h2 {
+  background-color: rgba(255, 255, 0, 0.9);
+  font-family: monospace;
+  font-size: 200%;
+  margin-top: 0;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+#realtor {
+  flex-direction: row-reverse;
 }
 
 .one-third-port img {
-  border: 2px solid black;
+/*  border: 2px solid black;
+padding-bottom: 10px;
+box-shadow: 0 8px 6px -6px black; */
+/* #1 */
+
+  border-radius: 15px;
+
+  /* #2 */
+  padding: 1rem;
+  margin: 1rem;
 }
 
 .one-third-port img:hover {
