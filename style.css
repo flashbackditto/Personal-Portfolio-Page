@@ -207,8 +207,12 @@ h2.mainTitle {
 }
 
 .atribute {
-  margin: auto;
+  margin: 1rem;
   padding: 2rem;
+  background: rgba(0, 0, 0, 1);
+  border-radius: 1rem;
+  width: 200px;
+  height: 250px;
 }
 .atributes{
   font-weight: bolder;
@@ -268,6 +272,7 @@ h2.mainTitle {
   margin: auto;
   width: 100%;
   text-align: center;
+
 }
 
 
@@ -276,6 +281,7 @@ h2.mainTitle {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
+
 }
 
 .one-third-port{
@@ -285,6 +291,12 @@ h2.mainTitle {
  flex-wrap: wrap;
  padding:1rem;
  align-items: flex-start;
+ width: 80%;
+ margin: auto;
+ background: black;
+ border-radius: 3rem;
+
+ margin: 3rem auto;
 }
 
 .projCard {
@@ -294,7 +306,7 @@ h2.mainTitle {
   border: 2px solid black;
   margin: 2rem;
   padding: 1rem;
-  height: 215px;
+  height: 350px;
   box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.5);
 }
 
@@ -325,8 +337,23 @@ box-shadow: 0 8px 6px -6px black; */
 }
 
 .one-third-port img:hover {
-  opacity: 0.5;
+  box-shadow: 0px 8px 6px -9px rgba( 0, 0, 0, 0.6);
 }
+
+.container {
+
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+
+  width: max-content;
+  margin: auto;
+}
+.container a i {
+  font-size: 200%;
+  padding: 1rem;
+
+}
+
 
 .contact{
   position: static;
