@@ -7,9 +7,6 @@ html, body {
     background-color: rgba(37, 37, 34, 1);
     color: rgba(255,255,255, 0.9)
 }
-.clearFixPadding{
-    padding-top: 1.5rem;
-}
 
 .intro{
 	 height: 100%;
@@ -77,7 +74,6 @@ nav a {
     border-top: 3px solid white;
     transform: translate(-100%, 50%);
 }
-
 
 .navSight a:after {
     left: 0;
@@ -186,7 +182,6 @@ h2.mainTitle {
   margin-bottom: 30px;
 }
 
-
 #profilePic {
   margin: 10px;
   position: relative;
@@ -224,19 +219,12 @@ h2.mainTitle {
   font-size: 300%;
 }
 
-#skillsTitle {
-  font-size: 200%;
-  font-family: monospace;
-  text-decoration: underline;
-}
-
-
 .card {
   background-color: rgba(255, 255, 255, 0.9);
   color: rgba(0, 0, 0, 1);
   border-radius: 10px;
   border: 2px solid black;
-  margin: 45px auto 0 auto;
+  margin: 7px;
   text-align: center;
   width: 50%;
   padding: 5px;
@@ -253,21 +241,17 @@ h2.mainTitle {
 .languages {
   display:flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
 }
 
 .languages li {
   list-style: none;
-  
   font-size: 200%;
-
 }
 
 .languages i {
   padding: 5px;
 }
-
-
 
 .projects hr {
   width: 50%;
@@ -277,16 +261,13 @@ h2.mainTitle {
   margin: auto;
   width: 100%;
   text-align: center;
-
 }
-
 
 .flexProj {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: center;
-
 }
 
 .one-third-port{
@@ -299,7 +280,6 @@ h2.mainTitle {
  margin: auto;
  background: black;
  border-radius: 2rem;
-
  margin: 3rem auto;
 }
 
@@ -313,6 +293,10 @@ h2.mainTitle {
   height: 350px;
   width:287px;
   box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.5);
+}
+.projCard ul li {
+  text-align: left;
+  padding: .5rem 0;
 }
 
 .projCard h2 {
@@ -329,14 +313,7 @@ h2.mainTitle {
 }
 
 .one-third-port img {
-/*  border: 2px solid black;
-padding-bottom: 10px;
-box-shadow: 0 8px 6px -6px black; */
-/* #1 */
-
   border-radius: 15px;
-
-  /* #2 */
   padding: 1rem;
   margin: 1rem;
 }
@@ -346,19 +323,16 @@ box-shadow: 0 8px 6px -6px black; */
 }
 
 .container {
-
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
-
   width: max-content;
   margin: auto;
 }
+
 .container a i {
   font-size: 200%;
   padding: 1rem;
-
 }
-
 
 .contact{
   position: static;
