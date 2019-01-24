@@ -172,21 +172,26 @@ h2.mainTitle {
   }
 }
 
-
 .about{
   text-align: center;
   margin: 5% 15%;
+}
+
+.bioWrapper{
+  background: black;
+  padding: 1rem;
+  border-radius: 3rem 1rem;
+  margin-bottom: 4rem;
 }
 
 .describe{
   display: flex;
   flex-direction: row;
   padding: 0;
-  margin-bottom: 30px;
 }
 
 #profilePic {
-  margin: 10px;
+  margin: 1rem;
   position: relative;
   bottom: 30px;
   border: 1px solid white;
@@ -195,6 +200,7 @@ h2.mainTitle {
 
 #bio {
   justify-content: flex-start;
+  margin: 0 1rem;
 }
 
 .heading {
@@ -269,8 +275,16 @@ h2.mainTitle {
 
 .projects{
   margin: auto;
-  width: 100%;
   text-align: center;
+  margin: 0 13rem;
+  background-color: rgba(255, 255, 255, 0.5);
+  padding: 1rem 0;
+  border-radius: 3rem;
+  margin-bottom: 4rem;
+
+   h2, p {
+     color: black;
+   }
 }
 
 .flexProj {
@@ -285,7 +299,6 @@ h2.mainTitle {
  flex-direction: row;
  justify-content: center;
  flex-wrap: wrap;
- padding:1rem;
  align-items: flex-start;
  margin: auto;
  background: black;
