@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Anonymous+Pro|Nova+Mono");
 html, body {
   background: #fff;
   padding: 0;
@@ -6,6 +7,7 @@ html, body {
   width: 100%;
   background-color: #252522;
   color: rgba(255, 255, 255, 0.9);
+  font-family: "Anonymous Pro", monospace;
 }
 
 .intro {
@@ -163,10 +165,13 @@ h2.mainTitle {
   padding: 0px 25px;
   margin: 0 auto;
 }
+.gitLink li i {
+  color: #001628;
+}
 .gitLink li :hover {
   font-weight: bold;
-  box-shadow: 5px 5px 5px white;
-  border-radius: 1rem;
+  text-shadow: 3px 3px 15px white;
+  transition: 0.3s;
 }
 
 .about {
@@ -202,6 +207,7 @@ h2.mainTitle {
 
 .heading {
   text-align: center;
+  font-family: "Nova Mono", monospace;
   font-weight: 200;
   font-size: 200%;
   text-decoration: underline;
@@ -209,16 +215,17 @@ h2.mainTitle {
 
 .atribute {
   margin: 1.5rem;
+  margin-bottom: 3.5rem;
   padding: 2rem;
   background: black;
   border-radius: 1rem;
   width: 215px;
   height: 250px;
+  font-family: monospace;
 }
 
 .atributes {
   font-weight: bolder;
-  font-family: monospace;
   display: flex;
   justify-content: space-evenly;
 }
@@ -229,7 +236,7 @@ h2.mainTitle {
 .card {
   background-color: rgba(255, 255, 255, 0.9);
   color: black;
-  border-radius: 10px;
+  border-radius: 1rem;
   border: 2px solid black;
   margin: 7px;
   text-align: center;
@@ -260,23 +267,29 @@ h2.mainTitle {
 }
 
 .titles {
-  background: black;
+  background: rgba(0, 22, 40, 0.7);
   padding: 1rem;
   margin: 7px;
   border-radius: 1rem 3rem;
+  font-family: monospace;
+  border: 2px solid black;
+}
+.titles strong {
+  text-decoration: underline;
+  padding-bottom: 2rem;
 }
 
 .projects {
   margin: auto;
   text-align: center;
   margin: 0 13rem;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 22, 40, 0.7);
   padding: 1rem 0;
   border-radius: 3rem;
   margin-bottom: 4rem;
 }
 .projects h2, .projects p {
-  color: black;
+  color: white;
 }
 
 .flexProj {
@@ -313,6 +326,7 @@ h2.mainTitle {
   background-color: rgba(255, 255, 0, 0.9);
   font-family: monospace;
   font-size: 200%;
+  color: black;
   margin-top: 0;
   padding: 1rem;
   border-radius: 10px;
@@ -320,6 +334,15 @@ h2.mainTitle {
 .projCard li {
   text-align: left;
   padding: 0.5rem 0;
+}
+.projCard li a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+.projCard li :hover {
+  text-decoration: underline;
+  transition: 0.4s;
 }
 
 #realtor {
@@ -346,6 +369,7 @@ h2.mainTitle {
 .container i {
   font-size: 200%;
   padding: 1rem;
+  color: black;
 }
 
 .contact {
