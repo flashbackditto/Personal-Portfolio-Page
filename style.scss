@@ -1,58 +1,57 @@
 html, body {
-  background: #fff;
-  padding: 0;
-  margin: 0;
-  height: 100%;
-  width: 100%;
-  background-color: #252522;
-  color: rgba(255, 255, 255, 0.9);
+    background: #fff;
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(37, 37, 34, 1);
+    color: rgba(255,255,255, 0.9)
 }
 
-.intro {
-  height: 100%;
-  width: 100%;
-  margin: auto;
-  background: url(img/artbk.jpg) no-repeat 50% 50%;
-  background-size: cover;
-  top: 0;
+.intro{
+	 height: 100%;
+	 width: 100%;
+	 margin: auto;
+	 background: url(img/artbk.jpg) no-repeat 50% 50%;
+	 background-size: cover;
+	 top: 0;
 }
 
 /* Start Navigation */
+
 nav {
-  text-transform: uppercase;
-  font-weight: 500;
-  letter-spacing: 1px;
-  position: fixed;
-  height: 100px;
-  width: 100%;
-  box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.4);
-  border-bottom: 2px solid black;
-  -moz-box-shadow: inset 0 0 10px #000000;
-  -webkit-box-shadow: inset 0 0 10px #000000;
-  box-shadow: inset 0 0 10px #000000;
-  z-index: 5000;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 1px;
+    position: fixed;
+    height: 100px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color:rgba(0, 0, 0, 0.4);
+    border-bottom: 2px solid black;
+    -moz-box-shadow: inset 0 0 10px #000000;
+    -webkit-box-shadow: inset 0 0 10px #000000;
+    box-shadow: inset 0 0 10px #000000;
+    z-index: 5000;
 }
 
-nav * {
-  box-sizing: border-box;
-  transition: all 0.35s ease;
+nav *  {
+    box-sizing: border-box;
+    transition: all 0.35s ease;
 }
-
 nav ul {
   padding-left: 35%;
 }
-
 nav li {
-  display: inline-block;
-  list-style: outside none none;
-  margin: 0.5em 1em;
-  padding: 0;
+    display: inline-block;
+    list-style: outside none none;
+    margin: .5em 1em;
+    padding: 0;
 }
 
 nav a {
-  padding: 0.5em 0.8em;
-  color: white;
+  padding: .5em 0.8em;
+  color: rgba(255,255,255);
   position: relative;
   text-decoration: none;
   font-size: 20px;
@@ -60,36 +59,35 @@ nav a {
 
 .navSight a:before,
 .navSight a:after {
-  height: 14px;
-  width: 14px;
-  position: absolute;
-  content: "";
-  transition: all 0.35s ease;
-  opacity: 0;
+    height: 14px;
+    width: 14px;
+    position: absolute;
+    content: '';
+    transition: all 0.35s ease;
+    opacity: 0;
 }
 
 .navSight a:before {
-  right: 0;
-  top: 0;
-  border-right: 3px solid white;
-  border-top: 3px solid white;
-  transform: translate(-100%, 50%);
+    right: 0;
+    top: 0;
+    border-right: 3px solid white;
+    border-top: 3px solid white;
+    transform: translate(-100%, 50%);
 }
 
 .navSight a:after {
-  left: 0;
-  bottom: 0;
-  border-left: 3px solid white;
-  border-bottom: 3px solid white;
-  transform: translate(100%, -50%);
+    left: 0;
+    bottom: 0;
+    border-left: 3px solid white;
+    border-bottom: 3px solid white;
+    transform: translate(100%, -50%);
 }
 
 a:hover:before,
 a:hover:after {
-  transform: translate(8%, 0%);
-  opacity: 1;
+    transform: translate(8%, 0%);
+    opacity: 1;
 }
-
 /* nav for mobile media query */
 /* nav ul, nav:active ul{
 	display:none;
@@ -111,15 +109,18 @@ a:hover:after {
 	background: url(img/nav-icon.png) center;
   display: inline-block;
 } */
+
 /* End Navigation */
+
+
 h1.mainName {
   width: 50%;
-  font-family: "Playfair Display", serif;
-  font-size: 300%;
-  font-weight: 700;
-  color: #FFF;
+	font-family: 'Playfair Display', serif;
+	font-size: 300%;
+	font-weight: 700;
+	color: #FFF;
   text-align: right;
-  text-shadow: 2px 2px 45px #000000;
+	text-shadow: 2px 2px 45px #000000;
   float: left;
   margin: 0 auto;
 }
@@ -127,7 +128,7 @@ h1.mainName {
 h2.mainTitle {
   text-shadow: 2px 2px 7px #fff;
   color: #000000;
-  font-family: "Playfair Display", sans-serif;
+  font-family: 'Playfair Display', sans-serif;
   font-size: 165%;
   width: 48%;
   padding-top: 72px;
@@ -137,7 +138,7 @@ h2.mainTitle {
 }
 
 .content {
-  font-family: "Playfair Display", serif;
+	font-family: 'Playfair Display', serif;
   width: 100%;
   height: 59%;
   position: relative;
@@ -147,7 +148,7 @@ h2.mainTitle {
   padding-top: 270px;
 }
 
-.gitLink {
+.gitLink{
   display: inline-flex;
   list-style: none;
   margin: auto;
@@ -156,25 +157,28 @@ h2.mainTitle {
   top: 1rem;
   font-size: 200%;
   padding: 0 1rem;
-}
-.gitLink li {
-  position: relative;
-  right: 100px;
-  padding: 0px 25px;
-  margin: 0 auto;
-}
-.gitLink li :hover {
-  font-weight: bold;
-  box-shadow: 5px 5px 5px white;
-  border-radius: 1rem;
+
+  li {
+    position: relative;
+    right: 100px;
+    padding: 0px 25px;
+    margin: 0 auto;
+
+    :hover {
+      font-weight: bold;
+      box-shadow: 5px 5px 5px white;
+      border-radius: 1rem;
+    }
+  }
 }
 
-.about {
+
+.about{
   text-align: center;
   margin: 5% 15%;
 }
 
-.describe {
+.describe{
   display: flex;
   flex-direction: row;
   padding: 0;
@@ -203,41 +207,45 @@ h2.mainTitle {
 .atribute {
   margin: 1.5rem;
   padding: 2rem;
-  background: black;
+  background: rgba(0, 0, 0, 1);
   border-radius: 1rem;
   width: 215px;
   height: 250px;
 }
 
-.atributes {
+.atributes{
   font-weight: bolder;
   font-family: monospace;
   display: flex;
   justify-content: space-evenly;
-}
-.atributes i {
+
+  i {
   font-size: 300%;
+ }
 }
+
 
 .card {
   background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  color: rgba(0, 0, 0, 1);
   border-radius: 10px;
   border: 2px solid black;
   margin: 7px;
   text-align: center;
   width: 44%;
   padding: 5px;
-}
-.card h2 {
+
+  h2{
   background-color: rgba(255, 255, 0, 0.9);
   font-family: monospace;
   font-size: 200%;
   margin-top: 0;
   padding: 1rem;
-}
-.card p {
-  padding: 0 1rem;
+ }
+
+ p{
+   padding: 0 1rem;
+ }
 }
 
 .tech i {
@@ -246,7 +254,7 @@ h2.mainTitle {
 }
 
 .languages {
-  display: flex;
+  display:flex;
   flex-direction: row;
   justify-content: space-between;
   margin-top: 3.5rem;
@@ -254,12 +262,12 @@ h2.mainTitle {
 
 .titles {
   background: black;
-  padding: 1rem;
-  margin: 7px;
-  border-radius: 1rem 3rem;
+    padding: 1rem;
+    margin: 7px;
+    border-radius: 1rem 3rem;
 }
 
-.projects {
+.projects{
   margin: auto;
   width: 100%;
   text-align: center;
@@ -272,41 +280,43 @@ h2.mainTitle {
   justify-content: center;
 }
 
-.one-third-port {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding: 1rem;
-  align-items: flex-start;
-  margin: auto;
-  background: black;
-  border-radius: 2rem;
-  margin: 1.5rem auto;
+.one-third-port{
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ flex-wrap: wrap;
+ padding:1rem;
+ align-items: flex-start;
+ margin: auto;
+ background: black;
+ border-radius: 2rem;
+ margin: 1.5rem auto;
 }
 
 .projCard {
   background-color: rgba(255, 255, 255, 0.9);
-  color: black;
+  color: rgba(0, 0, 0, 1);
   border-radius: 10px;
   border: 2px solid black;
   margin: 2rem;
   padding: 1rem;
   height: 350px;
-  width: 287px;
+  width:287px;
   box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.5);
-}
-.projCard h2 {
-  background-color: rgba(255, 255, 0, 0.9);
-  font-family: monospace;
-  font-size: 200%;
-  margin-top: 0;
-  padding: 1rem;
-  border-radius: 10px;
-}
-.projCard li {
-  text-align: left;
-  padding: 0.5rem 0;
+
+  h2 {
+    background-color: rgba(255, 255, 0, 0.9);
+    font-family: monospace;
+    font-size: 200%;
+    margin-top: 0;
+    padding: 1rem;
+    border-radius: 10px;
+  }
+
+  li {
+    text-align: left;
+    padding: .5rem 0;
+  }
 }
 
 #realtor {
@@ -321,7 +331,7 @@ h2.mainTitle {
 
 /* This hover is currently hard to see and hould be updated */
 .one-third-port img:hover {
-  box-shadow: 0px 8px 6px -9px rgba(0, 0, 0, 0.6);
+  box-shadow: 0px 8px 6px -9px rgba( 0, 0, 0, 0.6);
 }
 
 .container {
@@ -329,13 +339,14 @@ h2.mainTitle {
   border-radius: 5px;
   width: max-content;
   margin: auto;
-}
-.container i {
-  font-size: 200%;
-  padding: 1rem;
+
+  i {
+    font-size: 200%;
+    padding: 1rem;
+  }
 }
 
-.contact {
+.contact{
   position: static;
   width: 100%;
   text-align: center;
@@ -350,11 +361,10 @@ input, textarea {
   border-radius: 5px;
 }
 
-textarea {
-  height: 120px;
+  textarea {
+    height: 120px;
 }
-
-button[type=submit] {
+button[type="submit"] {
   cursor: pointer;
   width: 25%;
   border: none;
@@ -365,25 +375,21 @@ button[type=submit] {
   padding: 10px;
   font-size: 15px;
 }
-
-button[type=submit]:hover {
+button[type="submit"]:hover {
   background-color: rgba(250, 250, 0, 0.9);
   -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
-button[type=submit]:active {
+button[type="submit"]:active {
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
-
-footer {
+footer{
   width: 100%;
   height: 30px;
   margin: auto;
   padding-top: 10px;
   text-align: center;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0,0,0, 0.7)
 }
-
-/*# sourceMappingURL=style.css.map */
