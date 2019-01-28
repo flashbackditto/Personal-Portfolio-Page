@@ -423,4 +423,31 @@ footer {
   background-color: rgba(0, 0, 0, 0.7);
 }
 
+@media only screen and (min-width: 300px) and (max-width: 767px) {
+  .describe {
+    flex-direction: column;
+  }
+
+  .languages {
+    flex-direction: column;
+  }
+
+  .card {
+    width: auto;
+  }
+
+  .atributes {
+    flex-direction: column;
+  }
+
+  .atribute {
+    width: auto;
+    margin: 1.5rem 0;
+  }
+
+  .projects {
+    margin: auto;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
