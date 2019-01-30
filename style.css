@@ -294,7 +294,6 @@ h2.mainTitle {
   border: 2px solid black;
   margin: 2rem;
   padding: 1rem;
-  height: 350px;
   width: 287px;
   box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.5);
 }
@@ -349,15 +348,21 @@ h2.mainTitle {
 }
 
 .contactWrapper {
-  width: 100%;
   text-align: center;
-  margin: 0 auto;
+  margin: 0 15%;
+}
+
+.contact {
+  background-color: rgba(0, 22, 40, 0.7);
+  border-radius: 3rem;
+  padding: 1rem;
+  margin: 4rem 0;
 }
 
 input, textarea {
   display: block;
-  width: 50%;
   margin: 0 auto;
+  width: 80%;
   padding: 1rem;
   border-radius: 5px;
 }
@@ -422,6 +427,16 @@ footer {
     display: inline-block;
   }
 
+  .content {
+    width: auto;
+    position: static;
+    font-size: 140%;
+  }
+
+  .gitlink {
+    display: none;
+  }
+
   .about {
     margin: 5% 5%;
   }
@@ -459,7 +474,7 @@ footer {
   }
 
   .projects {
-    margin: auto;
+    margin: 2rem auto;
     padding: 5%;
   }
 
@@ -473,6 +488,13 @@ footer {
 
   .projCard {
     margin: 0 2rem 2rem 2rem;
+  }
+
+  .contactWrapper {
+    margin: auto;
+  }
+  .contactWrapper .contact {
+    margin: 2rem 0;
   }
 }
 
