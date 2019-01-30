@@ -171,7 +171,7 @@ h2.mainTitle {
 }
 
 #profilePic {
-  margin: 1rem;
+  margin: 1rem auto;
   position: relative;
   bottom: 30px;
   border: 1px solid white;
@@ -218,10 +218,10 @@ h2.mainTitle {
   border: 2px solid black;
   text-align: center;
   width: 44%;
-  padding: 5px;
 }
 .card h2 {
   background-color: rgba(255, 255, 0, 0.9);
+  border-radius: 1rem 1rem 0 0;
   font-family: monospace;
   font-size: 200%;
   margin-top: 0;
@@ -293,7 +293,6 @@ h2.mainTitle {
   border-radius: 10px;
   border: 2px solid black;
   margin: 2rem;
-  padding: 1rem;
   width: 287px;
   box-shadow: 4px 6px 9px rgba(0, 0, 0, 0.5);
 }
@@ -304,7 +303,7 @@ h2.mainTitle {
   color: black;
   margin-top: 0;
   padding: 1rem;
-  border-radius: 10px;
+  border-radius: 10px 10px 0 0;
 }
 .projCard li {
   text-align: left;
@@ -332,19 +331,24 @@ h2.mainTitle {
 
 /* This hover is currently hard to see and hould be updated */
 .one-third-port img:hover {
-  box-shadow: 0px 8px 6px -9px rgba(0, 0, 0, 0.6);
+  box-shadow: 0 8px 6px -3px rgba(255, 255, 255, 0.6);
+  transition: 0.3s;
 }
 
 .container {
   background: rgba(0, 0, 0, 0.5);
   border-radius: 5px;
   width: max-content;
-  margin: auto;
+  margin: 1rem auto;
 }
 .container i {
   font-size: 200%;
   padding: 1rem;
   color: black;
+}
+.container :hover {
+  text-shadow: 3px 3px 15px white;
+  transition: 0.3s;
 }
 
 .contactWrapper {
@@ -377,17 +381,18 @@ button[type=submit] {
   border: none;
   border-radius: 5px;
   background-color: rgba(255, 255, 0, 0.9);
+  border: 1px solid rgba(0, 0, 0, 0);
   color: black;
   margin: 0 0 5px;
   padding: 10px;
   font-size: 15px;
+  transition: all 0.2s ease;
 }
 
-button[type=submit]:hover {
-  background-color: rgba(250, 250, 0, 0.9);
-  -webkit-transition: background 0.3s ease-in-out;
-  -moz-transition: background 0.3s ease-in-out;
-  transition: background-color 0.3s ease-in-out;
+#contact-submit:hover {
+  transform: translate3D(0, -2px, 0);
+  box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.9);
+  border: 1px solid black;
 }
 
 button[type=submit]:active {
@@ -404,11 +409,17 @@ footer {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  nav {
+    height: 55px;
+    position: static;
+  }
+
   nav ul, nav:active ul {
     display: none;
+    background: black;
     padding: 8px 0;
-    left: 65px;
-    top: 60px;
+    left: 0;
+    top: 0;
     width: 100%;
     z-index: 1000;
   }
@@ -419,8 +430,8 @@ footer {
   }
 
   #menu-icon {
-    top: 0;
-    left: 0;
+    top: 15px;
+    left: 10px;
     width: 30px;
     height: 26px;
     background: url(img/nav-icon.png) center;
@@ -433,6 +444,10 @@ footer {
     font-size: 140%;
   }
 
+  h2.mainTitle {
+    font-size: 145%;
+  }
+
   .gitlink {
     display: none;
   }
@@ -443,6 +458,8 @@ footer {
 
   #profilePic {
     position: static;
+    max-width: 100%;
+    height: auto;
   }
 
   .bioWrapper {
