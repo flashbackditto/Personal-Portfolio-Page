@@ -10,7 +10,7 @@
    <script scr="script.js"></script> <!-- used for js testing remove when deployed -->
 
 </head>
-
+<html>
 <body>
   <section class="intro">
 <header>
@@ -132,21 +132,20 @@
 <hr />
 </section>
 
-<div class="projects">
+<div class="projects" id="proj">
 
-<a id="proj"></a>
   <h2 class="heading">Project Portfolio</h2>
     <p>Below are some websites I've been hired to design and create, as well as
       projects I've made for my own skill developement</p>
 
 <div class="examples">
 <div class="flexProj">
-  <section class="one-third-port" id="country">
-    <a href="#" target="_blank">
+
+
+  <div class="one-third-port" id="country">
+    <!-- <a href="#" target="_blank"> -->
     <img  src="img/countryProj1.png">
-  </a>
-
-
+  <!-- </a> -->
     <div class="projCard">
       <h2>Country Information App</h2>
       <ul>
@@ -161,9 +160,9 @@
           <a href="https://github.com/flashbackditto" target="_blank"><i class="fab fa-github"></i></a>
       </div>
     </div>
-    </section>
+    </div>
 
-    <section class="one-third-port" id="realtor">
+    <div class="one-third-port" id="realtor">
       <a href="#" target="_blank">
     <img src="img/realEstateProj1.png"></a>
 
@@ -182,7 +181,7 @@
       </div>
     </div>
 
-    </section>
+    </div>
     </div>
 
   </div>
@@ -190,25 +189,24 @@
 
 <div>
 
-  <section class="contact">
+  <section class="contactWrapper">
     <hr />
+    <div class="contact">
     <h2 class="heading">Contact</h2><a id="cont"></a>
       <p>For inquires regarding freelance work, web design, collaboration, or consultation email me at </p>
-      <div class="inputsLeft">
       <form>
         <input placeholder="Name or Company" type="text" name="name" />
       </form>
       <form>
         <input placeholder="Email" type="text" name="email" />
       </form>
-    </div>
-    <div class="commentRight">
       <form action="">
         <textarea placeholder="Comments & Inquires" name="comments"></textarea>
       </form>
       <form>
      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
    </form>
+   </div>
     </section>
 
 </div>

@@ -92,28 +92,6 @@ a:hover:after {
   opacity: 1;
 }
 
-/* nav for mobile media query */
-/* nav ul, nav:active ul{
-	display:none;
-	padding: 8px 0;
-	left: 65px;
-	top: 60px;
-	width: 100%;
-	z-index: 1000;
-}
- nav:hover ul{
-	display: block;
-	position: absolute;
-}
-#menu-icon {
-  top: 0;
-  left: 0;
-	width: 30px;
-	height:26px;
-	background: url(img/nav-icon.png) center;
-  display: inline-block;
-} */
-/* End Navigation */
 h1.mainName {
   width: 50%;
   font-family: "Playfair Display", serif;
@@ -238,7 +216,6 @@ h2.mainTitle {
   color: black;
   border-radius: 1rem;
   border: 2px solid black;
-  margin: 7px;
   text-align: center;
   width: 44%;
   padding: 5px;
@@ -269,7 +246,6 @@ h2.mainTitle {
 .titles {
   background: rgba(0, 22, 40, 0.7);
   padding: 1rem;
-  margin: 7px;
   border-radius: 1rem 3rem;
   font-family: monospace;
   border: 2px solid black;
@@ -282,9 +258,9 @@ h2.mainTitle {
 .projects {
   margin: auto;
   text-align: center;
-  margin: 0 13rem;
+  margin: 0 12.5rem;
   background-color: rgba(0, 22, 40, 0.7);
-  padding: 1rem 0;
+  padding: 0.5rem;
   border-radius: 3rem;
   margin-bottom: 4rem;
 }
@@ -372,8 +348,7 @@ h2.mainTitle {
   color: black;
 }
 
-.contact {
-  position: static;
+.contactWrapper {
   width: 100%;
   text-align: center;
   margin: 0 auto;
@@ -424,29 +399,80 @@ footer {
 }
 
 @media only screen and (min-width: 300px) and (max-width: 767px) {
+  nav ul, nav:active ul {
+    display: none;
+    padding: 8px 0;
+    left: 65px;
+    top: 60px;
+    width: 100%;
+    z-index: 1000;
+  }
+
+  nav:hover ul {
+    display: block;
+    position: absolute;
+  }
+
+  #menu-icon {
+    top: 0;
+    left: 0;
+    width: 30px;
+    height: 26px;
+    background: url(img/nav-icon.png) center;
+    display: inline-block;
+  }
+
+  .about {
+    margin: 5% 5%;
+  }
+
+  #profilePic {
+    position: static;
+  }
+
+  .bioWrapper {
+    margin-bottom: 1.5rem;
+  }
+
   .describe {
     flex-direction: column;
   }
 
   .languages {
     flex-direction: column;
+    margin-top: auto;
   }
 
   .card {
     width: auto;
+    margin: 1.5rem 0;
   }
 
   .atributes {
     flex-direction: column;
+    margin-top: 1rem;
   }
 
   .atribute {
     width: auto;
-    margin: 1.5rem 0;
+    margin: 1rem 0;
   }
 
   .projects {
     margin: auto;
+    padding: 5%;
+  }
+
+  .one-third-port {
+    width: 100%;
+  }
+  .one-third-port img {
+    height: auto;
+    max-width: 80%;
+  }
+
+  .projCard {
+    margin: 0 2rem 2rem 2rem;
   }
 }
 
