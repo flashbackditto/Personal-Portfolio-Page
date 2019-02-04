@@ -255,10 +255,16 @@ h2.mainTitle {
   padding-bottom: 2rem;
 }
 .titles #titlesBackround {
+  margin: auto;
   background: black;
+  background-image: linear-gradient(to right, yellow, black);
   padding: 1rem;
   border-radius: 70%;
+  border: 1px solid white;
   width: 250px;
+}
+.titles #titlesBackround h2 {
+  text-shadow: 2px 2px 2px black;
 }
 
 .projects {
@@ -476,6 +482,10 @@ footer {
     margin-bottom: 1.5rem;
   }
 
+  .titles #titlesBackround {
+    width: auto;
+  }
+
   .describe {
     flex-direction: column;
   }
@@ -522,6 +532,9 @@ footer {
   }
   .contactWrapper .contact {
     margin: 2rem 0;
+  }
+  .contactWrapper .contact p {
+    margin: 1rem 2rem;
   }
 }
 
