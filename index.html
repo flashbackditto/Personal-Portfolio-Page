@@ -1,16 +1,17 @@
-<DOCTYPE html>
+<!DOCTYPE>
+ <html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Adam R. Lee | Web Developer & Software Engineer</title>
+  <link rel="shortcut icon" type="image/png" href="img/logo.png">
   <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-  <script src="https://unpkg.com/scrollreveal@3.4.0/dist/scrollreveal.min.js"></script> <!--reference desktop/websites under construction/personal portfolio for example of this magic -->
-   <script scr="script.js"></script> <!-- used for js testing remove when deployed -->
+  <script src="https://unpkg.com/scrollreveal@3.4.0/dist/scrollreveal.min.js"></script>
 
 </head>
-<html>
+
 <body>
   <section class="intro">
 <header>
@@ -19,9 +20,9 @@
   <ul class="navSight">
     <li><a href="#">Home</a></li>
     <li><a href="#about">About Me</a></li>
-    <li><a href="#skills">Skills</a></li>
     <li><a href="#proj">Projects</a></li>
     <li><a href="#cont">Contact</a></li>
+    <li><a href="#">Resume<i class="fas fa-download"></i></a></li>
   </ul>
 </nav>
 </header>
@@ -85,7 +86,7 @@
   </div>
 
   <div class = "titles">
-     <h2><strong>Professional freelancer experienced with:</strong></h2>
+     <h2><strong>Professional Freelancer Experienced With:</strong></h2>
      <div id="titlesBackround">
      <h2>RESTful APIs</h2>
      <h2>DOM manipluation</h2>
@@ -213,9 +214,15 @@
 <div>
   <footer> Adam R. Lee Design &copy </footer>
 </div>
+
 <script type="text/javascript">
     window.sr = ScrollReveal();
-    sr.reveal('.anim');
+    sr.reveal('.bioWrapper', {delay: 150});
+    sr.reveal('.projects', {delay: 150});
+    sr.reveal('.one-third-port', {delay: 550});
+    sr.reveal('.anim', {delay: 275});
+    sr.reveal('.contact', {delay: 250});
 </script>
+
 </body>
 </html>
