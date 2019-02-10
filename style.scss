@@ -188,6 +188,13 @@ h2.mainTitle {
 #bio {
   justify-content: flex-start;
   margin: 0 1rem;
+
+  p {
+    a {
+      text-decoration: underline;
+      color: white;
+    }
+  }
 }
 
 .heading {
