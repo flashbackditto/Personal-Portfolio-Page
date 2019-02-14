@@ -179,6 +179,7 @@ h2.mainTitle {
 
 #profilePic {
   margin: 1rem auto;
+  margin-right: 1rem;
   position: relative;
   bottom: 30px;
   border: 1px solid white;
@@ -213,6 +214,10 @@ h2.mainTitle {
   width: 219px;
   height: 250px;
   font-family: monospace;
+
+   P {
+     line-height: 1.1rem;
+   }
 }
 
 .atributes{
@@ -244,7 +249,7 @@ h2.mainTitle {
  }
 
  p{
-   padding: 0.5rem 1rem;
+   padding: 0.5rem 2rem;
  }
 }
 
@@ -298,6 +303,7 @@ h2.mainTitle {
 
    h2, p {
      color: rgba(255, 255, 255, 1);
+     padding: 0 3rem;
    }
 }
 
@@ -370,7 +376,7 @@ h2.mainTitle {
 .one-third-port img:hover {
   box-shadow: 0 8px 6px -3px rgba( 255, 255, 255, 0.6);
   opacity: 0.7;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 .container {
@@ -501,11 +507,13 @@ footer{
       position: static;
       max-width: 100%;
       height: auto;
+      margin-right: auto;
     }
 
     .bioWrapper {
       margin-bottom: 1.5rem;
     }
+
     .titles {
       margin-left: 0;
       #titlesBackround {
@@ -524,6 +532,10 @@ footer{
     .card {
       width: auto;
       margin: 1.5rem 0;
+
+      p {
+        line-height: 1.2rem;
+      }
     }
     .atributes {
       flex-direction: column;
@@ -532,6 +544,11 @@ footer{
     .atribute {
       width: auto;
       margin: 1rem 0;
+
+       P {
+         line-height: 1.2rem;
+         font-size: 110%
+       }
     }
 
     .projects {
