@@ -202,18 +202,12 @@
     <div class="contact">
     <h2 class="heading">Contact</h2><a id="cont"></a>
       <p>For inquires regarding freelance work, web design, collaboration, or consultation</p>
-      <form>
-        <input placeholder="Name or Company" type="text" name="name" />
-      </form>
-      <form>
-        <input placeholder="Email" type="text" name="email" />
-      </form>
-      <form action="">
+      <form class = "contact-form" action="index.php" method="post">
+        <input type="text" placeholder="Name or Company"  name="name" />
+        <input type="text" placeholder="Email" name="email" />
         <textarea placeholder="Comments & Inquires" name="comments"></textarea>
       </form>
-      <form>
      <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
-   </form>
    </div>
     </section>
 
